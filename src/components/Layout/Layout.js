@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import MetaLinks from "../MetaLinks/MetaLinks";
-import Header from "../Header/Header";
-import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
-import Footer from "../Footer/Footer";
+// import Header from "../Header/Header";
+// import { TopAppBarFixedAdjust } from "@material/react-top-app-bar";
+// import Footer from "../Footer/Footer";
 
 import styles from "./layout.module.scss";
 
@@ -48,13 +48,13 @@ const TemplateWrapper = ({ children }) => (
           seo={data.datoCmsHome.seoMetaTags}
         />
         <MetaLinks />
-        <Header />
+        {/* <Header /> */}
         {/* <MobileHeader />
         <WideHeader /> */}
-        <TopAppBarFixedAdjust>
+        {/* <TopAppBarFixedAdjust> */}
         <main className={styles.siteMain}>{children}</main>
-        <Footer />
-        </TopAppBarFixedAdjust>
+        {/* <Footer /> */}
+        {/* </TopAppBarFixedAdjust> */}
       </div>
     )}
   />
