@@ -1,0 +1,122 @@
+:root {
+    --mdc-theme-primary: #000000;
+    --mdc-theme-on-primary: #ffffff;
+    --mdc-theme-secondary: #000000;
+    --mdc-theme-on-secondary: #ffffff;
+    --mdc-theme-surface: #fefefe;
+    --mdc-theme-background: #e0e0e0;
+    --mdc-theme-on-background: #000000;
+  }
+  /* 
+  // starting dark theme code
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --mdc-theme-primary: #000000;
+      --mdc-theme-on-primary: #ffffff;
+      --mdc-theme-secondary: #000000;
+      --mdc-theme-on-secondary: #ffffff;
+      --mdc-theme-surface: #fefefe;
+      --mdc-theme-background: #000000;
+      --mdc-theme-on-background: #ffffff;
+    }
+  } */
+  
+  * {
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    background-color: var(--mdc-theme-background);
+    color: var(--mdc-theme-on-background);
+    line-height: 1.5rem;
+  }
+  
+  p {
+    margin: 1rem auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .underlined__link {
+    text-decoration: underline;
+    color: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: var(--mdc-theme-on-primary);
+    background: var(--mdc-theme-primary);
+  }
+  
+  ::selection {
+    color: var(--mdc-theme-on-primary);
+    background: var(--mdc-theme-primary);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, a {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 300;
+  }
+  
+  .jaydan-home__section {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    max-width: 600px;
+    align-items: center;
+  }
+  
+  .jaydan-home-bio__container {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+  
+  .jaydan-home-main__link {
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+  }
+  
+  .jaydan-home-main__link aside{
+    display: inline-block;
+  }
+  
+  .jaydan-home-social__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .jaydan-home-social__container a img {
+    width: 48px;
+  }
+  
+  .jaydan-home-profile__img {
+    width: 256px;
+    border-radius: 50%;
+  }
+  
+  .jaydan-urwin-logo__img {
+    max-width: 300px;
+  }
+  
